@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VividstasisSonglistReader", "VividstasisSonglistReader\VividstasisSonglistReader.csproj", "{D8578E00-4453-4DC5-8CA5-3F5EC413172F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VividstasisRatingComputer", "VividstasisRatingComputer\VividstasisRatingComputer.csproj", "{A8587887-96AC-45B3-B337-FA9A882758D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VividstasisUtil", "VividstasisUtil\VividstasisUtil.csproj", "{3F86CCBA-80B3-4DFE-B7BF-05E70560E322}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8578E00-4453-4DC5-8CA5-3F5EC413172F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8578E00-4453-4DC5-8CA5-3F5EC413172F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8578E00-4453-4DC5-8CA5-3F5EC413172F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8578E00-4453-4DC5-8CA5-3F5EC413172F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8587887-96AC-45B3-B337-FA9A882758D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8587887-96AC-45B3-B337-FA9A882758D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8587887-96AC-45B3-B337-FA9A882758D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8587887-96AC-45B3-B337-FA9A882758D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F86CCBA-80B3-4DFE-B7BF-05E70560E322}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F86CCBA-80B3-4DFE-B7BF-05E70560E322}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F86CCBA-80B3-4DFE-B7BF-05E70560E322}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F86CCBA-80B3-4DFE-B7BF-05E70560E322}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
