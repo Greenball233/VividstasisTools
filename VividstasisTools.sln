@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VividstasisRatingComputer",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VividstasisUtil", "VividstasisUtil\VividstasisUtil.csproj", "{3F86CCBA-80B3-4DFE-B7BF-05E70560E322}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VividstasisStoryReader", "VividstasisStoryReader\VividstasisStoryReader.csproj", "{153E150E-18A4-4914-9A65-0ACE1DC19236}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VividstasisBetweenspaceDocumentReader", "VividstasisBetweenspaceDocumentReader\VividstasisBetweenspaceDocumentReader.csproj", "{449793C5-B147-4DF0-9F13-66820C4D9590}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{3F86CCBA-80B3-4DFE-B7BF-05E70560E322}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F86CCBA-80B3-4DFE-B7BF-05E70560E322}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F86CCBA-80B3-4DFE-B7BF-05E70560E322}.Release|Any CPU.Build.0 = Release|Any CPU
+		{153E150E-18A4-4914-9A65-0ACE1DC19236}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{153E150E-18A4-4914-9A65-0ACE1DC19236}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{153E150E-18A4-4914-9A65-0ACE1DC19236}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{153E150E-18A4-4914-9A65-0ACE1DC19236}.Release|Any CPU.Build.0 = Release|Any CPU
+		{449793C5-B147-4DF0-9F13-66820C4D9590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{449793C5-B147-4DF0-9F13-66820C4D9590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{449793C5-B147-4DF0-9F13-66820C4D9590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{449793C5-B147-4DF0-9F13-66820C4D9590}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
