@@ -9,13 +9,6 @@ public static class Program
 {
     public static void Main(string[] args)
     {
-        Song[] qwq = JObject.Parse(File.ReadAllText(@"D:\Program Files (x86)\Steam\steamapps\common\vividstasis\song_list.json"))["songs"].ToObject<Song[]>();
-        foreach (Song song in qwq)
-        {
-            if (!song.isOriginal) continue;
-            if (song.name.Length == "**************".Length) Console.WriteLine(song.name);
-        }
-        return;
         if (args.Length < 1)
         {
             Console.WriteLine("Error: No File Path Detected");
