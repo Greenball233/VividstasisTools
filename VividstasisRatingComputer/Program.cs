@@ -52,8 +52,7 @@ public static class Program
             .ToDictionary(pair => pair.Key, pair => pair.Value);
 
         ConsoleTableUtil consoleTable = new ConsoleTableUtil();
-        consoleTable.TableTitleText =
-            $"Rating List (Rating: {ratingList.Take(Math.Max(20, ratingList.Count)).Select(pair => pair.Value).Sum() / 20f:0})";
+        consoleTable.TableTitleText = $"Rating List (Rating: {ratingList.Take(Math.Min(20, ratingList.Count)).Select(pair => pair.Value).Sum() / 20f:0})";
 
         consoleTable.AddTableColumn("Ranking", TextAlignment.Center, 6);
         consoleTable.AddTableColumn("Song Name", TextAlignment.Center, 100);
