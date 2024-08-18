@@ -16,8 +16,7 @@ public static class Program
             var processName = Path.GetFileNameWithoutExtension(Environment.ProcessPath);
             Console.WriteLine($"Usage:\n" +
                               $"    `{processName}`: The process will detect song_information.bin in the process folder and detect highscore_table file in the default path\n" +
-                              $"    `{processName} <song_information.bin path>`: The process will use the specific path as the path to song_information.bin and detect highscore_table file in the default path\n" +
-                              $"    `{processName} <song_information.bin path> <highscore_table path>`: The process will use the specific path as the path to song_information.bin and use the specific path as the path to highscore_table");
+                              $"    `{processName} <song_information.bin path>`: The process will use the specific path as the path to song_information.bin and detect highscore_table file in the default path");
             return;
         }
 
@@ -70,14 +69,14 @@ public static class Program
             consoleTable.AddTableDataItem(consoleTableDataItem);
             ranking++;
         }
-        
-        Console.WriteLine(consoleTable.MakeConsoleTable());
+
+        string table = consoleTable.MakeConsoleTable();
+        File.WriteAllText("rating_list.txt", table);
     }
 
     private static int? GetRating(string scoreFilePath, int songId, Chart chart)
     {
-        string scoreStr = IniHelper.ReadStr(songId.ToString(CultureInfo.InvariantCulture),
-            chart.ratingClass.ToString(), "missing", scoreFilePath);
+        string scoreStr = IniHelper.ReadStr(songId.ToString(CultureInfo.InvariantCulture), chart.ratingClass.ToString(), "missing", scoreFilePath);
         if (scoreStr == "missing") return null;
         float score = float.Parse(scoreStr);
         float clearType = float.Parse(IniHelper.ReadStr(songId.ToString(CultureInfo.InvariantCulture),
@@ -88,17 +87,17 @@ public static class Program
         if (score <= 1008000f)
         {
             if (score >= 1000000f)
-                rating = (score - 1000000f) / 16000f + chart.difficulty + 1.5f;
+                rating = (score - 1000000f) / 16000f + chart.difficulty + 1f;
             else if (score >= 980000f)
-                rating = (score - 980000f) / 40000f + chart.difficulty + 1f;
+                rating = (score - 980000f) / 40000f + chart.difficulty + 0.5f;
             else if (score >= 950000f)
-                rating = (score - 950000f) / 30000f + chart.difficulty;
+                rating = (score - 950000f) / 30000f + chart.difficulty - 0.5f;
             else
-                rating = (score - 950000f) / 50000f + chart.difficulty;
+                rating = (score - 950000f) / 50000f + chart.difficulty - 0.5f;
         }
         else
         {
-            rating = chart.difficulty + 2f;
+            rating = chart.difficulty + 1.5f;
         }
 
         if (rating < 0 || score < 600000) rating = 0;
